@@ -1,0 +1,18 @@
+type Day {
+    # ID of day in database
+    id: ID!
+
+    # Date of schedule
+    date: String!
+
+    # Pairs for groups
+    dayPairs: [DayPairs]
+}
+
+extend type Query {
+    # Returns all days in db
+    findAllDays: [Day]
+
+    # Return day by date in format dd.MM.yyyy. Example: 12.03.2018
+    findDayByDate(date: String!): Day
+}

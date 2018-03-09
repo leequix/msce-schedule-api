@@ -1,0 +1,7 @@
+type Pair {
+    # Number of pair
+    number: Int!
+
+    # Pairs for subgroups
+    subgroupPairs: [SubgroupPair]
+}

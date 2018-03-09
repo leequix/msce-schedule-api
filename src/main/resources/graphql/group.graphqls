@@ -1,0 +1,15 @@
+type Group {
+    # Id of group in db
+    id: ID!
+
+    # Number of group
+    number: String!
+}
+
+type Query {
+    # Returns list of groups in db
+    findAllGroups: [Group]
+
+    # Return group with selected number from db
+    findGroupByNumber(number: String!): Group
+}

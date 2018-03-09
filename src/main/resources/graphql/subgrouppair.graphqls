@@ -1,0 +1,7 @@
+type SubgroupPair {
+    # Name of pair and name of teacher
+    title: String!
+
+    # Audience of pair
+    audience: String
+}

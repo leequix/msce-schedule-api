@@ -1,0 +1,7 @@
+type DayPairs {
+    # Group of schedule
+    group: Group!
+
+    # List of pairs for this group
+    pairs: [Pair]
+}
